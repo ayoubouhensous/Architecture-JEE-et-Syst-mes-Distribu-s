@@ -6,6 +6,10 @@ public class ImetierImpl implements IMetier{
 
     private Idao dao;
 
+    public ImetierImpl(){
+
+    }
+
     public ImetierImpl(Idao dao) {
         this.dao = dao;
     }
