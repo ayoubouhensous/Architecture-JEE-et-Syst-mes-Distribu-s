@@ -1,16 +1,19 @@
 package metier;
 
 import dao.Idao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+@Service("metier")
 public class ImetierImpl implements IMetier{
 
     private Idao dao;
 
-    public ImetierImpl(){
 
-    }
 
-    public ImetierImpl(Idao dao) {
+    public ImetierImpl(@Qualifier("dao2") Idao dao) {
         this.dao = dao;
     }
     @Override
