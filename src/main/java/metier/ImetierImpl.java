@@ -5,6 +5,10 @@ import dao.Idao;
 public class ImetierImpl implements IMetier{
 
     private Idao dao;
+
+    public ImetierImpl(Idao dao) {
+        this.dao = dao;
+    }
     @Override
     public double calculer() {
 
