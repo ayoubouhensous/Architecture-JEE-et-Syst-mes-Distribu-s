@@ -10,8 +10,11 @@ public class ImetierImpl implements IMetier{
 
         double t =dao.getData();
         double resultado = t*23;
-        
+
         return resultado;
     }
 
+    public void setDao(Idao dao) {
+        this.dao = dao;
+    }
 }
